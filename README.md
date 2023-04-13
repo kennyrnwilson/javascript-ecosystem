@@ -15,6 +15,37 @@ JavaScript runs in a JavaScript execution engine. For the purposes of this docum
  * Node.js commonly used for server side JavaScript
  * Chrome browser commonly used for client side JavaScript
 
+<br/>
+
+![Execution](./imgs/ExeEnvs.png)
+
  To install Node.js see this [Link](https://nodejs.org/en). Most users will want the LTS version. To install Chrome see this [Link](https://www.google.com/intl/en_in/chrome/)
 
+### Running Node.js in REPL
+ Once we have installed Node.js we can test it out in REPL mode  (Read Execute Print Loop) by simply typing the following
 
+ ```
+ node
+ ```
+
+ and then entering some basic command such as follows
+
+ ```
+ PS C:\Users\kenne\code\kennyrnwilson\git\javascript-ecosystem> node
+ Welcome to Node.js v16.16.0.
+Type ".help" for more information.
+> console.log("Hello World");
+Hello World
+undefined
+>
+ ```
+
+### Chrome dev tools
+Open Chrome and then enter Chrome dev tools using the key combination **Ctrl-Shift-I**. Move to the console tab and enter
+
+```
+console.log("Hello World");
+```
+
+## Basic Client Server and debugging
+We will use a very simple client server example that we can build out in order to elucidate various tools and features. The basic client-server logic is [here](./code/basic-client-server/README.MD)
