@@ -102,14 +102,49 @@ http://localhost:3000
 
 
 ## Debugging 
-IDEs tend to make the debugging process a little magical and opaque. In this section we try to cut throught the magic by explicitly setting up a process for debug. Debugging involves a process that runs with debug server support and a debug client that connects to the server and controls it. In this context debug server does not mean a server side process. It can be a front-end or a back-end process. Let us first consider debugging a server side Node.js process.
+IDEs tend to make the debugging process a little magical and opaque. In this section we try to cut throught the magic by explicitly setting up a process for debug. Debugging involves a process that runs with debug server support and a debug client that connects to the server and controls it. 
 
-### Start Server process with Debug and then Attach
+
+> **Note:** In this context debug server does not mean a server side process. It can be a front-end or a back-end process. 
+
+We consider four debug scenarios in this document.
+
+ * Simple Launch and Debug Server Side Process
+ * Launch and Attach to Server Side process
+ * Attach to Front End process 
+ * Launch and Attach front end process.
+
+ We use Visual Studio Code as our debugger. For more details see [Debugging](https://code.visualstudio.com/Docs/editor/debugging)
+
+Let us consider each of the four scenarios in turn.
+
+### Simple Launch and Attach to Server Side process
+Visual Studio Code comes with a very simple way of debuggigng Java Script node processes. If we click the **Run and Debug** icon in the  **Activity Bar** 
+
+![Run And Debug Icon](./img/run-debug-icon.png)
+
+We see the **Run and Debug View** It is the first option we are interested in.
+
+![Run and Debug View](./img/run-and-debug-view.png)
+
+Open the [./Server.js](./Server.js) file and press the blue **Run and Debug** button. Visual studio will not launch Server.js in node with debug server support and attach itself as the debug client. You should see the debug options floating. Put a breakpoint on line 7.
+
+![Simple Debug](./img/simple-debug.png)
+
+Now open the link. You should hit the breakpoint.
+
+[http://localhost:3000/](http://localhost:3000/)
+
+
+
+### Attach to Server Side process
 In our case the debug server process is our Node.js process running the Server.js file
 
 <br/>
 
 ![Debug](./img/Debug.png)
+
+This will open the **Run and Debug View** The first time we do this it should look as follows. 
 
 To enable debug support we start Node.js with a special --inspect flag
 
@@ -123,6 +158,10 @@ Debugger listening on ws://127.0.0.1:9229/a1a276e6-0a0c-497d-9949-ae3ab179b9a5
 For help, see: https://nodejs.org/en/docs/inspector
 Example app listening on port 3000
 ```
+
+Now that we have a node process running with debug server support the next step is to get Visual Studio Code to create a debug configuration that can be used to attach to the process. We click the **Run and Debug** icon in the  **Activity Bar** 
+
+![Run And Debug Icon](./img/run-debug-icon.png)
 
 We then can attach Visual Studio Code as the debug client by making sure Server.js is loaded in Visual Studio Code and has the focus. Now select the debug tab on the left (play button with bug) and then choose **create a launch.json file**
 
