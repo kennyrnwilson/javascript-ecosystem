@@ -1,8 +1,3 @@
-import a from './modules/arithmetic.js';
-var {add,subtract} = a;
-import {divide} from './modules/arithmetic.js';
-
-
 let x = document.getElementById('x');
 let y = document.getElementById('y');
 let button = document.getElementById('submit');
@@ -15,5 +10,5 @@ function clickHandler(event) {
    let xv = Number(x.value)
    let yv = Number(y.value);
    
-    r.innerHTML = `result is ${divide(xv,yv)}` ;
+    r.innerHTML = `result is ${xv+yv}` ;
 }

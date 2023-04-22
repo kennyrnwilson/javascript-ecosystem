@@ -1,5 +1,12 @@
-function add(a,b) {
-    return a+b;
-  }
+var myModule = {
+  add: function(x,y) { return x+y},
+  sub: function(x,y) { return x-y}
+ }
 
-export {add};
+export function divide(x,y) 
+ { 
+  return x/y
+ }
+
+export default myModule;
+ 
