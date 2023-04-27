@@ -180,3 +180,8 @@ Now attach Visual Studio Code using the Attach Chrome configuration
 ![Attach Chrome](./img/attach-chrome.png)
 
 If you click the add button on your front end application you should hit the break point.
+
+## References 
+|Resource|
+:--|
+[Visual Studio Debugging](https://code.visualstudio.com/Docs/editor/debugging)

@@ -16,6 +16,13 @@ At runtime we have something that looks like this.
 
 ![Client and Server](./img/basic-client-server.drawio.png)
 
+## Installing Node dependencies
+I will use the NPM package manager to install and manage node dependencies. To install express run
+
+```
+npm install express
+```
+
 We now take a quick look at the Server and the Font-End client application.
 ## Server.js
 As mentioned the [Server.js](./Server.js) uses [Express](https://expressjs.com/) web framework. Lets take a look at our file bit by bit.
@@ -123,3 +130,8 @@ We then load the client using the URL
 
 http://localhost:3000
 
+## References 
+|Resource|
+:--|
+[Node Package Manager](https://www.npmjs.com/)
+[Express](https://expressjs.com/)

@@ -100,4 +100,12 @@ console.log(divider2(20,2));
 
 ```
 
+## References 
+|Resource|
+:--|
+[JavaScript Module Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+[CommonJS](https://nodejs.org/api/modules.html#modules-commonjs-modules)
+[ECMAScript](https://nodejs.org/api/esm.html#modules-ecmascript-modules)
+
+
 
