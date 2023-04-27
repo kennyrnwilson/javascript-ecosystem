@@ -56,6 +56,8 @@ I will use a very simple client server example to help illustrate the various to
 ## JavaScript Modules
 In this section I introduce JavaScript modules and show the basic usages of the modern ecma script module format. I also very briefly cover the old CommonJS modules.[here](./code/javascript-module-formats/README.MD)
 
+## Adding Modules to the Basic Client Server example
+I now extend the simple client server example by adding JavaScript modules. [See](./code/basic-client-server-and-modules/README.MD)
 
 ## References 
 |Resource|
