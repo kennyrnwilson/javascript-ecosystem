@@ -48,4 +48,8 @@ console.log("Hello World");
 ```
 
 ## Basic Client Server and debugging
-We will use a very simple client server example that we can build out in order to elucidate various tools and features. The basic client-server logic is [here](./code/basic-client-server/README.MD)
+We will use a very simple client server example that we can build out in order to elucidate various tools and features. The basic client-server logic is [here](./code/basic-client-server/README.MD). In this introductory section I also show how to perform basic JavaScript debugging using Visual Studio Code of both Server Side and Front End logic. 
+
+## JavaScript Modules
+In this section I introduce JavaScript modules and show the basic usages of the modern ecma script module format. I also very briefly cover the old CommonJS modules.[here](./code/javascript-module-formats/README.MD)
+
