@@ -1,107 +1,5 @@
-# Basic Client Server Example
+# Basic JavaScript Debugging
 
-The basic Client/Server example I will build out in subsequent sections. The basic structure of the project is as follows
-
-## Project Structure
- We have an [Express](https://expressjs.com/) based server that can serve up our front end application which lives in the app folder. 
-
-- Server.js
-  - app
-    - index.html
-    - main.js
-
-At runtime we have something that looks a bit like this.
-
-</br>
-
-![Client and Server](./img/basic-client-server.drawio.png)
-
-### Server.js
-The [Server.js](./Server.js) uses Express.js
-
-```js
-const express = require('express')
-const app = express()
-const port = 3000
-
-// Log all incoming request to the console
-const logRequest= (req, res, next) => {
-  console.info(`${req.method} ${req.originalUrl}`)
-  next()
-}
-app.use(logRequest)
-
-// Setup static file serving from app directory. Use Index.html as root page
-app.use(express.static('app', {index: "Index.html"}), )
-
-// Start listening
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
-```
-
-### app
-The application consists of a simple piece of html and a simple single javascript file that attaches itself as a listener on a button and performs a simple addition.
-
-**[app/index.html](./app/index.html)**
-
-```html
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <title>Basic JavaScript module example</title>
-    <script defer src="main.js"></script>
-  </head>
-  <body>
-    <label for="fname">X:</label>
-    <input type="text" id="x" name="x" value="2"><br><br>
-    <label for="lname">Y:</label>
-    <input type="text" id="y" value="3" name="y"><br><br>
-    <input type="submit" value="Submit" id="submit">  
-    <div id="result"></div></dev>
-  </body>
-</html>
-```
-
-**[app/main.js](./app/main.js)**
-```js
-let x = document.getElementById('x');
-let y = document.getElementById('y');
-let button = document.getElementById('submit');
-
-button.addEventListener('click', clickHandler);
-
-let r = document.getElementById('result');
-
-function clickHandler(event) {
-   let xv = Number(x.value)
-   let yv = Number(y.value);
-   
-    r.innerHTML = `result is ${xv+yv}` ;
-}
-```
-
-## Running the application
-We start the server very simply using the following command.
-
-```
-node Server.js
-```
-
-or by using the command 
-
-```
-npm start
-```
-
-We then load the client using the URL
-
-http://localhost:3000
-
-
-
-## Debugging 
 IDEs tend to make the debugging process a little magical and opaque. In this section we try to cut throught the magic by explicitly setting up a process for debug. Debugging involves a process that runs with debug server support and a debug client that connects to the server and controls it. 
 
 
@@ -120,7 +18,7 @@ We consider four debug scenarios in this document.
 
 Let us consider each of the four scenarios in turn.
 
-### Simple Launch and Attach to Server Side process
+## Simple Launch and Attach to Server Side process
 Visual Studio Code comes with a very simple way of debuggigng Java Script node processes. If we click the **Run and Debug** icon in the  **Activity Bar** 
 
 ![Run And Debug Icon](./img/run-debug-icon.png)
@@ -138,7 +36,7 @@ Now open the link. You should hit the breakpoint.
 [http://localhost:3000/](http://localhost:3000/)
 
 
-### Launch and Debug Server Side process (Configured)
+## Launch and Debug Server Side process (Configured)
 Often we want to create a more complex debug configuration. To do this click the **Run and Debug** icon in the  **Activity Bar**  and select **create a launch.json file** 
 
 ![Create launch.json](./img/create-launch-file.png)
@@ -178,7 +76,7 @@ If we add a breakpoint on line 7 of Server.js, press this "Launch Program" butto
 [http://localhost:3000/](http://localhost:3000/)
 
 
-### Attach to Server Side Process
+## Attach to Server Side Process
 We can start our server process on the command line with debug support by passing the --inspect flag to Node.js
 
 To enable debug support we start Node.js with a special --inspect flag
@@ -202,7 +100,7 @@ Choose **Node.js: attach**
 Visual Studio will add another section to the launch.json file that looks as follows.
 
 ```json
-        {
+          {
             "name": "Attach",
             "port": 9229,
             "request": "attach",
@@ -219,7 +117,7 @@ Now we can attach to the running process by using this option in the drop down.
 
 Once again reload the link [http://localhost:3000/](http://localhost:3000/) and we should hit our break point.
 
-### Launch and Attach front end process.
+## Launch and Attach front end process.
 Until now all out debug examples have centered around debugging the server. Let us now consider debugging the front end process. Once again we select **Add Configuration**
 
 ![Add Configuration](./img/add-configuration.png)
@@ -258,7 +156,7 @@ The modified configuration looks as follows.
 
 Put a breakpoint on line 5 of [main.js](./app/main.js) and press press play with "Launch Chrome" selected. Visual Studio code will launch Chrome with debug enables and attach itself as the debugger. It will then hit the break point on line 5.
 
-### Attach to Front End process 
+## Attach to Front End process 
 Attaching to Chrome is a little more involved. We need to start chrome with special debug arguments. To do this we need to add a shortcut. On my machine the Chrome executable is as follows.
 
 **"C:\Program Files\Google\Chrome\Application\chrome.exe"**
