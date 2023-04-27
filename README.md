@@ -56,3 +56,9 @@ I will use a very simple client server example to help illustrate the various to
 ## JavaScript Modules
 In this section I introduce JavaScript modules and show the basic usages of the modern ecma script module format. I also very briefly cover the old CommonJS modules.[here](./code/javascript-module-formats/README.MD)
 
+
+## References 
+|Resource|
+:--|
+[Node.js](https://nodejs.org/en)
+|[Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)|
