@@ -21,7 +21,7 @@ JavaScript runs in a JavaScript execution engine. For the purposes of this docum
 
  To install Node.js see this [Link](https://nodejs.org/en). Most users will want the LTS version. To install Chrome see this [Link](https://www.google.com/intl/en_in/chrome/)
 
-### Running Node.js in REPL
+## Running Node.js in REPL
  Once we have installed Node.js we can test it out in REPL mode  (Read Execute Print Loop) by simply typing the following
 
  ```
@@ -40,24 +40,29 @@ undefined
 >
  ```
 
-### Chrome dev tools
+## Chrome dev tools
 Open Chrome and then enter Chrome dev tools using the key combination **Ctrl-Shift-I**. Move to the console tab and enter
 
 ```
 console.log("Hello World");
 ```
 
-## Basic Client Server
+## Basic JavaScript Development
+### Basic Client Server
 I will use a very simple client server example to help illustrate the various tools and techniques. [See](./code/basic-client-server/README.MD) for an introduction to the client server code and instructions on how to run it.
 
-## Basic JavaScript Debugging
+### Basic JavaScript Debugging
 [This section](./code/basic-javascript-debugging/README.MD) show how to use Visual Studio code to perform simple debugging of both the server and the front end application
 
-## JavaScript Modules
+### JavaScript Modules
 In this section I introduce JavaScript modules and show the basic usages of the modern ecma script module format. I also very briefly cover the old CommonJS modules.[here](./code/javascript-module-formats/README.MD)
 
-## Adding Modules to the Basic Client Server example
+### Adding Modules to the Basic Client Server example
 I now extend the simple client server example by adding JavaScript modules. [See](./code/basic-client-server-and-modules/README.MD)
+
+### Nodemon File Watching and Hot Restart (Includes Debugging)
+In [this section](./code/filewatching-for-hot-reloading-server/README.MD) I show how to use Nodemon to perform hot restart and hot restart debugging
+
 
 ## References 
 |Resource|
