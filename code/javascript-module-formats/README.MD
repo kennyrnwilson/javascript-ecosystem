@@ -18,9 +18,9 @@ There are two main module formats used in JavaScript development.
  ## ECMAScript (ES6) Modules
 The folder [ecma-script](./ecma-script/) contains examples discussed below. 
 
-ES6 modules are file based. One file contains one module. We do not have to explicitly use strict mode with ES6 modules because they are automatically strict mode. Unlike older module formats ES6 modules do not require instantiation. We just import a modules exported symbols. ES6 modules are effectively singletons in that there is only ever one instance created.
+ES6 modules are file based. One file contains one module. We do not have to explicitly use strict mode with ES6 modules because they are automatically strict mode. Unlike older module formats, ES6 modules do not require instantiation. We just import a modules exported symbols. ES6 modules are effectively singletons in that there is only ever one instance created.
 
-If we only use ES6 modules each module imports references from other ES6 modules it needs, thereby minimising any interaction with the global scope which is a huge advantage. We now look at some ways that an ES6 module exports symbol and how client files consumer those symbols. 
+If we only use ES6 modules each module imports references from any other ES6 modules it needs, thereby minimising any interaction with the global scope. This is a huge advantage. We now look at some ways that an ES6 module exports symbols and how client files consumer those symbols. 
 
 **Note:** that to run ES6 modules using Node.js we need to
 add "type":"module", to the package.json at the top level
@@ -62,7 +62,7 @@ export function divider(x,y)
 ```
 
 ### Module Consumption (I)
-Now let us take a look at a simple consumer of our module [./ecma-script/ModuleConsumer.js](./ecma-script/ModuleConsumer.js). The first line imports the default symbol and named symbol using the same names as the exported from the es5mod.js.  
+Now let us take a look at a simple consumer of our module [./ecma-script/ModuleConsumer.js](./ecma-script/ModuleConsumer.js). The first line imports the default symbol and the named symbol using the same names as those exported from the es5mod.js.  
 
 **Import symbols using same names as exported**
 ``` js

@@ -6,9 +6,5 @@ module.exports = {
     resolve: { extensions: [".js"] },
     module: {
         rules: []
-    },
-    devServer: {
-        contentBase: "./assets",
-        port: 4500
     }
 };

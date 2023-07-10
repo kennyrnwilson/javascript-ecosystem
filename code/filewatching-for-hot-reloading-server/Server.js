@@ -5,7 +5,7 @@ const port = 3000
 // Log all incoming request to the console
 const logRequest= (req, res, next) => {
   console.info(`${req.method} ${req.originalUrl}`)
-  console.log("Another");
+  console.log("Another3");
   next()
 }
 app.use(logRequest)
@@ -15,5 +15,5 @@ app.use(express.static('app', {index: "Index.html"}), )
 
 // Start listening
 app.listen(port, () => {
-  console.log(`Example app listening on the port ${port}`)
+  console.log(`Example app listening on the port given ${port}`)
 })

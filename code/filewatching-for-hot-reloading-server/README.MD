@@ -1,6 +1,6 @@
 #  File Watching and Hot Reloading Server (Nodemon)
 
-[Nodemon](https://www.npmjs.com/package/nodemon) is a file watcher that can restart processes when files in a directory change which can be very useful, especially during web development. Before getting started we need to install nodemon
+[Nodemon](https://www.npmjs.com/package/nodemon) is a file watcher that can restart processes when files in a directory change. This can be very useful, especially during web development. Before getting started we need to install nodemon
 
 ```
 npm install -g nodemon
@@ -29,7 +29,7 @@ We should see something similar to the following
 Example app listening on port 3000
 ```
 
-Now if we change and save our Server.js file then nodemon will restart the process for us. So nodemon has give us restart functionality on the server. What if we want reload plus debugging? We can modify our Launch Node target as follows. 
+Now if we change and save our Server.js file then nodemon will restart the process for us. So nodemon has given us restart functionality on the server. What if we want reload plus debugging? We can modify our Launch Node target as follows. 
 
 ```json
         {
@@ -45,10 +45,13 @@ Now if we change and save our Server.js file then nodemon will restart the proce
         }
 ```
 
-Node the following changes  
+Note the following changes  
 
  * runtimeExecutable - tell VS Code to use nodemon rather that basic Node
  * runtimeArgs - pass the --inspect flag to nodemon which will start Node.js with debug server enabled
+
+> **Note:** We need to have the Server.js open and with the focus before runing this target as program is set as ${file}. 
+
 
 ## Debug with Attach and Nodemon
 Run the server on the command line as follows
@@ -72,6 +75,7 @@ Now add the following debug configuration
 ```
 
 Now you can attache using the new configuration. Any changeas to file will once again cause the process to restart in the debugger.
+
 
 ## References
 |Resource|
