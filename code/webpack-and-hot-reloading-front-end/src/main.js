@@ -16,5 +16,5 @@ function clickHandler(event) {
    let xv = Number(x.value)
    let yv = Number(y.value);
    
-    r.innerHTML = `result is alos ${divide(xv,yv)}` ;
+    r.innerHTML = `result is also ${divide(xv,yv)}` ;
 }

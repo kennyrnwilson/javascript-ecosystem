@@ -61,3 +61,5 @@ npx webpack serve --config .\webpack.config.js
 ![Webpack Dev Server](./img/dev-server.png)
 
 
+## Debbuging
+We can launch Chrome with debugging using the technique described in a previous section. We can then have debug with hot reload on the client using Webpack dev server.
