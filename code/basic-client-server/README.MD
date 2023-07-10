@@ -37,14 +37,14 @@ const express = require('express')
 
 ### Creating a Server Object
 
-We then create an instance of the express web server calling the *express()* function.
+We then create an instance of the express web server by calling the *express()* function.
 
 ```js
 const app = express()
 ```
 
 ### Getting Server to log  requests
-We then register a price of middleware that will log every request that comes into our server from the browser. This is useful for diagnostic purposes and for adding breakpoints when we cover the basics of JavaScript debugging.
+We then register a piece of middleware that will log every request that comes into our server from the browser (or any other http client). This is useful for diagnostic purposes and for adding breakpoints when we cover the basics of JavaScript debugging.
 
 ```js
 // Log all incoming request to the console
@@ -56,7 +56,7 @@ app.use(logRequest)
 ```
 
 ### Telling Server where to server from
-We need to tell our Express server where to serve static files from. In our case all the files that constitute the front-end application are served from the **app** subfolder of the workspace. The *{index: "Index.html"}* syntax tells Express to server up "Index.html* when a browser passes the root path */*.
+We need to tell our Express server where to serve static files from. In our case all the files that constitute the front-end application are served from the **app** subfolder of the workspace. The *{index: "Index.html"}* syntax tells Express to serve up "Index.html* when a browser passes the root path */*.
 
 ```js
 app.use(express.static('app', {index: "Index.html"}), )
@@ -71,7 +71,7 @@ app.listen(port, () => {
 })
 ```
 ## app
-The application consists of a simple piece of html and a simple single javascript file that attaches itself as a listener on a button and performs a simple addition when clicked.
+The application consists of a simple piece of HTML and a simple single Javascript file that attaches itself as a listener on a button and performs a simple addition when clicked.
 
 **[app/index.html](./app/index.html)**
 
@@ -80,7 +80,7 @@ The application consists of a simple piece of html and a simple single javascrip
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>Basic JavaScript module example</title>
+    <title>Basic JavaScript Client/Server</title>
     <script defer src="main.js"></script>
   </head>
   <body>
