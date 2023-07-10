@@ -1,10 +1,9 @@
 # Basic JavaScript Debugging
 
-IDEs tend to make the debugging process a little magical and opaque. In this section we try to cut throught the magic by explicitly setting up a process for debug. Debugging involves a process that runs with debug server support and a debug client that connects to the server and controls it. 
+IDEs tend to make the debugging process a little magical and opaque. In this section I will cut throught the magic by explicitly setting up a process for debug. Debugging involves a process that runs with *debug server support* and a debug client that connects to the server and controls it. 
 
 
 > **Note:** In this context debug server does not mean a server side process. It can be a front-end or a back-end process. 
-
 We consider four debug scenarios in this document.
 
  * Simple Launch and Debug Server Side Process
@@ -19,7 +18,7 @@ We consider four debug scenarios in this document.
 Let us consider each of the four scenarios in turn.
 
 ## Simple Launch and Attach to Server Side process
-Visual Studio Code comes with a very simple way of debuggigng Java Script node processes. If we click the **Run and Debug** icon in the  **Activity Bar** 
+Visual Studio Code comes with a very simple way of debugging JavaScript node processes. If we click the **Run and Debug** icon in the  **Activity Bar** 
 
 ![Run And Debug Icon](./img/run-debug-icon.png)
 
@@ -27,7 +26,7 @@ We see the **Run and Debug View** It is the first option we are interested in.
 
 ![Run and Debug View](./img/run-and-debug-view.png)
 
-Open the [./Server.js](./Server.js) file and press the blue **Run and Debug** button. Visual studio will now launch Server.js in node with debug server support and attach itself as the debug client. You should see the debug options floating. Put a breakpoint on line 7.
+Open the [./Server.js](./Server.js) file and press the blue **Run and Debug** button. Visual Studio Code will ask you to select a debugger. Enter **Node.js**. Visual studio will now launch Server.js in node with debug server support and attach itself as the debug client. You should see the debug options floating. Put a breakpoint on line 7.
 
 ![Simple Debug](./img/simple-debug.png)
 
@@ -154,7 +153,7 @@ The modified configuration looks as follows.
         }
 ```
 
-Put a breakpoint on line 5 of [main.js](./app/main.js) and press press play with "Launch Chrome" selected. Visual Studio code will launch Chrome with debug enables and attach itself as the debugger. It will then hit the break point on line 5.
+Put a breakpoint on line 5 of [main.js](./app/main.js) and press press play with "Launch Chrome" selected. Visual Studio code will launch Chrome with debug enabled and attach itself as the debugger. It will then hit the break point on line 5.
 
 ## Attach to Front End process 
 Attaching to Chrome is a little more involved. We need to start chrome with special debug arguments. To do this we need to add a shortcut. On my machine the Chrome executable is as follows.
