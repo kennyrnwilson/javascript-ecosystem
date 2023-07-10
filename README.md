@@ -63,6 +63,9 @@ I now extend the simple client server example by adding JavaScript modules. [See
 ### Nodemon File Watching and Hot Restart (Includes Debugging)
 In [this section](./code/filewatching-for-hot-reloading-server/README.MD) I show how to use Nodemon to perform hot restart and hot restart debugging
 
+### Webpack - Bundling and Client side hot reload
+In [this section](./code/webpack-and-hot-reloading-front-end/README.MD) we show how to use webpack to enable hot reload of client side code. 
+
 
 ## References 
 |Resource|
