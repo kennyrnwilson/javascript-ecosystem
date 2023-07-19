@@ -7,51 +7,15 @@ The goal of this document is to teach the reader about JavaScript and its ecosys
  * JavaScript modules
  * Developer tools
 
-Each topic will be covered in a rather superficial manner. My goal is to show the user how to get a bare bones setup running and then, where appropriate, provide links to the relevant resources where the user can find more depth. My target audience is professional developers who want to start using JavaScript.
+Each topic will be covered in a rather superficial manner. My goal is to show the user how to get a bare bones setup running and then, where appropriate, provide links to the relevant resources where the user can find more depth. My target audience is professional developers who want to start using JavaScript. At present this document consists of the following section
 
-## Tools
- [NPM](./tools/node-package-manager.md)
 
-## Execution Environments
-JavaScript runs in a JavaScript execution engine. For the purposes of this document we will consider the following two commonly used execution environments 
+* [Introducing Node and NPM](./code/introducing-node-and-npm/introducing-node-and-npm.md) Show how to build client/server using Node.js in JavaScript
 
- * Node.js commonly used for 'server side' JavaScript
- * Chrome browser commonly used for client side JavaScript
+For details on the tools used in this document [See](./tools/README.MD)
 
-<br/>
 
-![Execution](./imgs/ExeEnvs.png)
-
- To install Node.js see this [Link](https://nodejs.org/en). Most users will want the LTS version. To install Chrome see this [Link](https://www.google.com/intl/en_in/chrome/)
-
- ## Packages
- There are other package managers but I will focus mostly on Node Package Manager or npm. 
-
-## Running Node.js in REPL
- Once we have installed Node.js we can test it out in REPL mode  (Read Execute Print Loop) by simply typing the following
-
- ```
- node
- ```
-
- and then entering some basic command such as follows
-
- ```
- PS C:\Users\kenne\code\kennyrnwilson\git\javascript-ecosystem> node
- Welcome to Node.js v16.16.0.
-Type ".help" for more information.
-> console.log("Hello World");
-Hello World
-undefined
->
- ```
-
-## Chrome dev tools
-Open Chrome and then enter Chrome dev tools using the key combination **Ctrl-Shift-I**. Move to the console tab and enter
-
-```
-console.log("Hello World");
-```
+## To Be Sorted Out
 
 ## Basic JavaScript Development
 ### Basic Client Server

@@ -1,0 +1,16 @@
+{
+  "name": "introducing-node-and-npm",
+  "version": "1.0.0",
+  "description": "This section introduces the absolute basic of JavaScript development. In it I will cover execution in a browser and in Node.js. I will also cover npm package manager.",
+  "scripts" : {
+    "start" : "node server/src/Server.js",
+    "server" : "node server/src/Server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

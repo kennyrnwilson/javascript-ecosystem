@@ -1,9 +1,20 @@
 # Node Package Manager (NPM)
 
+## Useful locations and setting
+
+|Location/Setting|Value|
+|:--|:--|
+|NPM Executable (Win)|*C:\Program Files\nodejs\npm*|
+|Global Package Location (Win)|*%APPDATA%\npm*|
+|Per User Config File (Win)|*%USERPROFILE%.npmrc*|
+|Global Config File|*%APPDATA%\npm\etc\npmrc (Windows)*|
+
+
 ## NPM Command Cheat Sheet
 
 |Need|Command|Example|
 |:--|:--|:--|
+|NPM Version|npm --version|
 |List global level node packages|npm list -g|
 |List top level global packages|npm list -g --depth 0|
 |Clean cache|npm cache clean --force|
