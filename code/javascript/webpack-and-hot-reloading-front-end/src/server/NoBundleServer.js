@@ -10,8 +10,8 @@ const logRequest= (req, res, next) => {
 app.use(logRequest);
 
 // Setup static file serving from app directory. Use Index.html as root page
-app.use(express.static('assets', {index: "noBundle.html"}));
-app.use(express.static('src'));
+app.use(express.static('public', {index: "NoBundle.html"}));
+app.use(express.static('src/client'));
 
 // Start listening
 app.listen(port, () => {

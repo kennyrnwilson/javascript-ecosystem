@@ -1,14 +1,14 @@
 module.exports = {
     mode: "development",
     devtool: "inline-source-map",
-    entry: "./src/main.js",
+    entry: "./src/client/Main.js",
     output: { filename: "bundle.js" },    
     resolve: { extensions: [".js"] },
     module: {
         rules: []
     },
     devServer: {
-        contentBase: "./assets",
-        port: 4500
+        contentBase: "./public",
+        port: 3000
     }
 };

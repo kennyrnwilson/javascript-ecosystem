@@ -14,6 +14,7 @@ Each topic will be covered in a rather superficial manner. My goal is to show th
 * [JavaScript Modules](./code/javascript/javascript-module-formats/javascript-modules.md) duces the two main JavaScript module formats. 
 * [Adding Modules to Basic Client](./code/javascript/adding-modules-to-client-server/adding-modules-to-client-server.md.md)
 * [Basic Debugging of JavaScript Client/Server in VS Code](./code/javascript/basic-javascript-debugging/README.MD)
+* [Using Webback to support hot reloading client](./code/javascript/webpack-and-hot-reloading-front-end/README.MD)
 
 
 For details on the tools used in this document [See](./tools/README.MD)

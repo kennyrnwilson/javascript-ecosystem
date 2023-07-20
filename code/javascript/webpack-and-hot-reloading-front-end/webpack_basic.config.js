@@ -1,7 +1,7 @@
 module.exports = {
     mode: "development",
     devtool: "inline-source-map",
-    entry: "./src/main.js",
+    entry: "./src/client/Main.js",
     output: { filename: "bundle.js" },    
     resolve: { extensions: [".js"] },
     module: {
