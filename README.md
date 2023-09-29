@@ -9,15 +9,16 @@ The goal of this document is to teach the reader about JavaScript and its ecosys
 
 Each topic will be covered in a rather superficial manner. My goal is to show the user how to get a bare bones setup running and then, where appropriate, provide links to the relevant resources where the user can find more depth. My target audience is professional developers who want to start using JavaScript. At present this document consists of the following section
 
+| Section Link                                                                                                                                | Description                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| [Introducing Node, NPM and Basic Client/Server](./code/javascript/introducing-node-and-npm/introducing-node-and-npm.md)                     | Introduce basic client/server project using Node.js in JavaScript |
+| [Introducing JavaScript Modules](./code/javascript/javascript-module-formats/javascript-modules.md)                                         | Introduces the two main JavaScript module formats.                |
+| [Adding JavaScript Modules to Basic Client/Server](./code/javascript/adding-modules-to-client-server/adding-modules-to-client-server.md.md) |                                                                   |
+| [Basic Debugging of JavaScript Client/Server in VS Code](./code/javascript/basic-javascript-debugging/README.MD)                            |                                                                   |
+| [Introducing Webpack and Hot Client Reloading](./code/javascript/webpack-and-hot-reloading-front-end/README.MD)                      |                                                                   |
 
-* [Introducing Node and NPM](./code/javascript/introducing-node-and-npm/introducing-node-and-npm.md) Introduce basic client/server project using Node.js in JavaScript
-* [JavaScript Modules](./code/javascript/javascript-module-formats/javascript-modules.md) duces the two main JavaScript module formats. 
-* [Adding Modules to Basic Client](./code/javascript/adding-modules-to-client-server/adding-modules-to-client-server.md.md)
-* [Basic Debugging of JavaScript Client/Server in VS Code](./code/javascript/basic-javascript-debugging/README.MD)
-* [Using Webback to support hot reloading client](./code/javascript/webpack-and-hot-reloading-front-end/README.MD)
 
 
-For details on the tools used in this document [See](./tools/README.MD)
 
 
 ## To Be Sorted Out
@@ -43,7 +44,7 @@ In [this section](./code/webpack-and-hot-reloading-front-end/README.MD) we show 
 
 
 ## References 
-|Resource|
-:--|
-[Node.js](https://nodejs.org/en)
-|[Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)|
+| Resource                                                        |
+| --------------------------------------------------------------- |
+| [Node.js](https://nodejs.org/en)                                |
+| [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) |
